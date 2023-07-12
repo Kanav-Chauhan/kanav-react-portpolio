@@ -10,9 +10,9 @@ import navIcon5 from "../assets/img/nav-icon5.svg";
 export const Footer = () => {
   return (
     <footer className="footer">
-      <Container>
+      <Container className="pt-5">
         <Row className="align-items-center">
-          <MailchimpForm />
+          {/* <MailchimpForm /> */}
           <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
           </Col>
@@ -24,7 +24,7 @@ export const Footer = () => {
                 <a href="https://twitter.com/kanavchauhan001"target="_blank"><img src={navIcon4} alt="" /></a>
                 <a href="https://github.com/Kanav-Chauhan"target="_blank"><img src={navIcon5} alt="" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>Made With 💖 By Kanav Chauhan</p>
           </Col>
         </Row>
       </Container>

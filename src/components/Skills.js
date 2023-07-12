@@ -35,19 +35,27 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Learning is a Great process of becoming more Expert with the experience that come as a reward, my passion of learning about the latest and the in-demand Technology made me master in these skills.<br></br></p>
+                        <p >Learning is a Great process of becoming more Expert with the experience that come as a reward,my passion of learning about the latest and the in-demand Technology made me master in these skills.<br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development - Beginner</h5>
+                                <h5>ReactJs</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>React - Beginner </h5>
+                                <h5>Figma </h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Tailwind CSS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image" />
+                                <h5>Python</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>C++ - Beginner </h5>
+                                <h5> NodeJS </h5>
                             </div>
                             {/* <div className="item">
                                 <img src={meter1} alt="Image" />

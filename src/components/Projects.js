@@ -5,6 +5,10 @@ import projImg2 from "../assets/img/proj2.png";
 import projImg3 from "../assets/img/proj3.png";
 import projImg4 from "../assets/img/proj4.png";
 import projImg5 from "../assets/img/proj5.png";
+import meta from "../assets/img/meta.png";
+import ytclone from "../assets/img/ytclone.png";
+import gym from "../assets/img/gym.png";
+import movie from "../assets/img/movie.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,6 +16,54 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Gym Guide",
+      description: "An API based Gym guide for all types of Exercise",
+      imgUrl: gym,
+      projLink:"https://gym-kanav.netlify.app",
+    },
+    {
+      title: "Meta Verse",
+      description: "A Beautiful Landing page for Meta Verse  ",
+      imgUrl: meta,
+      projLink:"https://meta-kanav.netlify.app",
+
+    },
+    {
+      title: "Youtube Clone",
+      description: "A Clone of an Biggest Video Sharing Platform",
+      imgUrl: ytclone,
+      projLink:"https://youtube-kanav.netlify.app",
+
+    },
+    {
+      title: "Movie Search",
+      description: "Movie Search using API in React",
+      imgUrl: movie,
+      projLink:"https://movie-kanav.netlify.app",
+
+    },
+  ];
+
+  const projects2 = [
+    
+    {
+      title: "Old Portfolio",
+      description: "Basic Portfolio by HTML,CSS,JS",
+      imgUrl: projImg4,
+      projLink:"https://kanav-chauhan.github.io/Portfolio/",
+
+    },
+    {
+      title: "SRM Notes",
+      description: "Website to Aid College Students",
+      imgUrl: projImg5,
+      projLink:"https://srmnotes.live",
+
+    },
+   
+  ];
+  const projects3 = [
     {
       title: "Simon Game",
       description: "An Amazing Game 2D",
@@ -32,25 +84,8 @@ export const Projects = () => {
       projLink:"https://kanav-chauhan.github.io/Drum-Kit/",
 
     },
-    {
-      title: "Old Portfolio",
-      description: "Basic Portfolio by HTML,CSS,JS",
-      imgUrl: projImg4,
-      projLink:"https://kanav-chauhan.github.io/Portfolio/",
-
-    },
-    {
-      title: "SRM Notes",
-      description: "Website to Aid College Students",
-      imgUrl: projImg5,
-      projLink:"https://srmnotes.live",
-
-    },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
+    
+    
   ];
 
   return (
@@ -91,10 +126,32 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p></p>
+                      <Row>
+                        {
+                          projects2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p></p>
+                    <Row>
+                        {
+                          projects3.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

@@ -21,7 +21,7 @@ export const Footer = () => {
             <a href="https://www.linkedin.com/in/kanav-chauhan-7a1a24230/" target="_blank"><img src={navIcon1} alt="" /></a>
                 <a href="https://discord.gg/hMm4NYN7bS"target="_blank"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/handsome_kanav/"target="_blank"><img src={navIcon3} alt="" /></a>
-                <a href="https://twitter.com/kanavchauhan001"target="_blank"><img src={navIcon4} alt="" /></a>
+                <a href="https://twitter.com/handsome_kanav"target="_blank"><img src={navIcon4} alt="" /></a>
                 <a href="https://github.com/Kanav-Chauhan"target="_blank"><img src={navIcon5} alt="" /></a>
             </div>
             <p>Made With 💖 By Kanav Chauhan</p>
